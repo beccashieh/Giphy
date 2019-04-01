@@ -1,0 +1,44 @@
+body {
+        background: url("/assets/background.jpg") no-repeat center center fixed; 
+        -moz-background-size: 100% 100%;
+        -o-background-size: 100% 100%;
+        -webkit-background-size: 100% 100%; 
+        background-size: 100% 100%;
+}
+
+.topic-button {
+    background-color: #05F2E2;
+    color :#11121A;
+    border-radius: 5px;
+    border-color:  rgb(83, 82, 82);
+    margin: 10px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.topic-button:hover {
+    background-color: #043363;
+    color: white;
+}
+
+h1 {
+    color: white;
+    font-family: 'Baloo Chettan', cursive;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#user-choice {
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    font-size: x-large;
+
+}
+
+.row {
+    align-content: center;
+}
+
+p {
+    color: white;
+    font-size: larger; 
+}
