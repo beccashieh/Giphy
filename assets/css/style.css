@@ -1,9 +1,10 @@
 body {
-        background: url("/assets/background.jpg") no-repeat center center fixed; 
+        background: url("../background.jpg") no-repeat center center fixed; 
         -moz-background-size: 100% 100%;
         -o-background-size: 100% 100%;
         -webkit-background-size: 100% 100%; 
         background-size: 100% 100%;
+        background-color: grey;
 }
 
 .topic-button {
@@ -41,4 +42,8 @@ h1 {
 p {
     color: white;
     font-size: larger; 
+}
+
+.images-row {
+    width: 100%;
 }
