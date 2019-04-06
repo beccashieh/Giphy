@@ -2,17 +2,12 @@ $(document).ready(function () {
     //Array of topics
     var topics = ["cats", "dogs", "birds", "fish", "pandas"];
 
+
     //Function to display the buttons
     function renderButtons() {
         //Deletes buttons prior to adding new ones, preventing duplicates.
         $(".buttons").empty();
-        //Handles adding topic once user inputs something into textbox.
-        $("#add-topic").on("click", function (event) {
-            event.preventDefault();
-            var choice = $("#choice-input").val().trim();
-            topics.push(choice);
-            renderButtons();
-        })
+
         //Loops through array of topics
         for (var i = 0; i < topics.length; i++) {
             var selector = $("<button>");
@@ -25,8 +20,19 @@ $(document).ready(function () {
 
     renderButtons();
 
+        //Handles adding topic once user inputs something into textbox.
+        $("#add-topic").on("click", function (event) {
+            event.preventDefault();
+            var choice = $("#choice-input").val().trim();
+            topics.push(choice);
+            renderButtons();
+            console.log(topics);
+            $("#choice-input").val('');
+
+        })
+
     //Event listener to request the gifs once the button is clicked.
-    $(".topic-button").on("click", function () {
+    $(document).on("click", ".topic-button", function () {
         var gifTopic = $(this).attr("data-name");
         var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + gifTopic + "&api_key=I3uUEvU4BlcowhufGXlpP2bKhemQ3mvT&limit=10";
         console.log(queryURL);
@@ -68,7 +74,7 @@ $(document).ready(function () {
 
         })
         $(document).on("click", ".img", function () {
-            // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+            //setting variable to be able to change the state of our element.
             var state = $(this).attr("data-state");
             // If the clicked image's state is still, update its src attribute to what its data-animate value is.
             // Then, set the image's data-state to animate

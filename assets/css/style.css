@@ -47,3 +47,9 @@ p {
 .images-row {
     width: 100%;
 }
+
+.img {
+    padding: 20px;
+    background-color: #07F0F2;
+    border-radius: 10px;
+}
