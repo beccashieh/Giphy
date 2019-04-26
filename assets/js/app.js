@@ -73,6 +73,7 @@ $(document).ready(function () {
             }
 
         })
+        
         $(document).on("click", ".img", function () {
             //setting variable to be able to change the state of our element.
             var state = $(this).attr("data-state");
