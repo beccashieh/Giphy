@@ -34,7 +34,7 @@ $(document).ready(function () {
     //Event listener to request the gifs once the button is clicked.
     $(document).on("click", ".topic-button", function () {
         var gifTopic = $(this).attr("data-name");
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + gifTopic + "&api_key=I3uUEvU4BlcowhufGXlpP2bKhemQ3mvT&limit=10";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + gifTopic + "&api_key=I3uUEvU4BlcowhufGXlpP2bKhemQ3mvT&limit=10";
         console.log(queryURL);
 
 
