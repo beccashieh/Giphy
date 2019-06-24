@@ -18,8 +18,13 @@
 
 * Portfolio link: https://beccashieh.github.io/Professional-Portfolio/
 
-## Built With
+## Technologies
 
-* [Boostrap](https://getbootstrap.com/docs/4.3/components/) - the design framework used. 
+* Boostrap
+* Javascript
+* HTML
+* CSS
+* jQuery
+* AJAX
 
 
